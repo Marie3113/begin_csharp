@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace beginning
 {
@@ -10,22 +11,17 @@ namespace beginning
     {
         static void Main(string[] args)
         {
-            int i = 0;
-            do
-
-            {
-                Console.WriteLine(i);
-                i++;
-
-            } while (i < 10);
-
-            while (i < 10)
-             Console.WriteLine(i);
-                i++;
-                
+            string entry = "Das ist ein Text mit Wörtern";
+            string[] entries = entry.Split(' ');
+              foreach(string wort in entries)
+            { 
+                Console.WriteLine(wort);
+            }
               
-            
-            
+            for(int i=0; i< entries.Length; i++)
+            {
+                Console.WriteLine(entries[i]);
+            }
 
             Console.ReadLine();
         }    
