@@ -10,26 +10,19 @@ namespace beginning
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wie groß bist du ( in Meter)?");
-            decimal height = Convert.ToDecimal(Console.ReadLine());
-            int multiplicator = 3;
-            Console.WriteLine("Du bist " + height * multiplicator + " groß!");
-
-            Console.ReadLine();
-
-            Console.WriteLine("Wie heißt du ? ");
-            string userName = Console.ReadLine();
-
-            Console.WriteLine("Hello " + userName);
-
-            Console.WriteLine("Wie alt bist du aktuell? ");
+            Console.WriteLine("Wie alt bist du?");
             int age = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Wie alt bist du in X Jahren");
-            int nextYear = Convert.ToInt32(Console.ReadLine());
-            int sumYears = age + nextYear;
-            Console.WriteLine("Du bist also " + nextYear + " Jahren, "+ sumYears );
-            Console.ReadLine();
+            if (age < 18)
+            {
+                Console.WriteLine(" Du kommst hier nicht rein!");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine("Viel Spaß!");
+                Console.ReadLine();
+            }
         }
     }
-}
+} 
