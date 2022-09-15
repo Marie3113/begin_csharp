@@ -10,6 +10,13 @@ namespace beginning
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Wie groß bist du ( in Meter)?");
+            decimal height = Convert.ToDecimal(Console.ReadLine());
+            int multiplicator = 3;
+            Console.WriteLine("Du bist " + height * multiplicator + " groß!");
+
+            Console.ReadLine();
+
             Console.WriteLine("Wie heißt du ? ");
             string userName = Console.ReadLine();
 
