@@ -10,7 +10,8 @@ namespace beginning
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            string userName = "Marie";
+            Console.WriteLine("Hello" + userName);
             Console.ReadLine();
         }
     }
