@@ -11,17 +11,13 @@ namespace beginning
     {
         static void Main(string[] args)
         {
-            string entry = "Das ist ein Text mit Wörtern";
-            string[] entries = entry.Split(' ');
-              foreach(string wort in entries)
-            { 
-                Console.WriteLine(wort);
-            }
-              
-            for(int i=0; i< entries.Length; i++)
-            {
-                Console.WriteLine(entries[i]);
-            }
+            int first_number = 1;
+                int second_number = 2;  
+
+                int sum = first_number + second_number;
+
+            Console.WriteLine(sum);
+            
 
             Console.ReadLine();
         }    
