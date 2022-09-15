@@ -10,11 +10,14 @@ namespace beginning
     {
         static void Main(string[] args)
         {
-           for(int i= 0; i < 10; i*=2)
-                
+            int i = 0;
+            while(i< 10)
+            {
                 Console.WriteLine(i);
+                i++;
+            }
            
-
+            
 
             Console.ReadLine();
         }
